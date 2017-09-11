@@ -13,6 +13,8 @@ import { SimplemdedemoappEntityModule } from './entities/entity.module';
 import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
 
+import { SimplemdeModule, SIMPLEMDE_CONFIG } from 'ng2-simplemde';
+
 import {
     JhiMainComponent,
     LayoutRoutingModule,
@@ -32,7 +34,10 @@ import {
         SimplemdedemoappHomeModule,
         SimplemdedemoappAdminModule,
         SimplemdedemoappAccountModule,
-        SimplemdedemoappEntityModule
+        SimplemdedemoappEntityModule,
+        SimplemdeModule.forRoot({
+            provide: SIMPLEMDE_CONFIG
+          })
     ],
     declarations: [
         JhiMainComponent,
