@@ -7,7 +7,7 @@ This repository reproduces [a problem](https://github.com/doxiaodong/ng2-simplem
 ## Note
 This repository contains lots of Java, but I don't think Java is needed to see the problem I'm having.
 
-##Installation
+## Installation
 
 The dependency was added using:
 
